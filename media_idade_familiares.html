@@ -23,7 +23,20 @@
             pulaLinha();
         }
 
-        var idadePedro
+        var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+        var numero = 1;
+        var totalidades = 0;
+
+        while (numero <= totalFamiliares) {
+            var idade = parseInt(prompt("Informe idade do familiar"));
+            totalFamiliares = totalFamiliares + idade;
+            numero++;
+        }
+
+        var mediaDasIdades = totalidades / totalFamiliares;
+        mostra("A média das idades dos familiares é " + mediaDasIdades);
+        mostra("FIM");
 
     </script>
 </body>
