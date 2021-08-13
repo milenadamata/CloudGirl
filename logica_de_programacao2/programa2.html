@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 2</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+
+        function desenhaQuadradoVerde(x) {
+        
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = "green";
+        pincel.fillRect(x, 0, 50, 50);
+        pincel.fillStroke = "black";
+        pincel.strokeRect(x, 0, 50, 50);
+        }
+        
+        desenhaQuadradoVerde (0);
+        desenhaQuadradoVerde (50);
+        desenhaQuadradoVerde (100);
+
+    </script>
+</body>
+
+</html>
