@@ -13,20 +13,20 @@
 
     <script>
 
-        function desenhaQuadradoVerde(x) {
+        function desenhaQuadrado(x,y,cor) {
         
         var tela = document.querySelector("canvas");
         var pincel = tela.getContext('2d');
 
-        pincel.fillStyle = "green";
-        pincel.fillRect(x, 0, 50, 50);
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
         pincel.fillStroke = "black";
-        pincel.strokeRect(x, 0, 50, 50);
+        pincel.strokeRect(x, y, 50, 50);
         }
         
-        desenhaQuadradoVerde (0);
-        desenhaQuadradoVerde (50);
-        desenhaQuadradoVerde (100);
+        desenhaQuadrado( 0, 0, "green");
+        desenhaQuadrado( 50, 0, "green");
+        desenhaQuadrado( 100, 0, "green");
 
     </script>
 </body>
