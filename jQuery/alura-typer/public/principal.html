@@ -3,22 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Alura Typer</h1>
-    <p class="frase">Esta frase tem quatro palavras</p>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Esta frase tem quatro palavras</p>
 
-    <ul class="informacoes">
-        <li><span id="tamanho-frase" >30</span> palavras</li>
-        <li><span id="tempo-digitacao">10</span> segundos</li>
-    </ul>
+        <ul class="informacoes center">
 
-    <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase" >30</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">3</span> segundos
+            </li>
+        </ul>
 
-    <ul>
-        <li><span id="contador-caracteres">0</span> caracteres</li>
-        <li><span id="contador-palavras">0</span> palavras</li>
-    </ul>
+        <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
+        <div>
+            <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
+        
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de palavras</th>
+                        <td>Remover</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Douglas</td>
+                        <td>10</td>
+                        <td><a href="#" class="botao-remover">
+                            <i class="small material-icons">delete</i>
+                        </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
 
 
     <script src="js/jquery.js"></script>
